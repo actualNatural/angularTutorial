@@ -12,6 +12,7 @@ import { FriendsListComponent } from './friends-list/friends-list.component';
 import { CartComponent } from './cart/cart.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 
+
 @NgModule({
   imports: [
     BrowserModule,

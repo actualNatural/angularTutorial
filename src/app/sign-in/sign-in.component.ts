@@ -10,6 +10,11 @@ export class SignInComponent {
 
   constructor(private route: ActivatedRoute) { }
 
+  hide : boolean = true;
+
+myFunction() {
+  this.hide = !this.hide;
+}
   
 
   
