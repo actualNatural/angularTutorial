@@ -6,7 +6,9 @@
       {{ friends.name }}
     </a>
   </h3>
+  <button type="button" (click)="addToCart(friends)">Buy</button>
 </div>
+
 
 <h4>Your Wishlist</h4>
 
@@ -16,6 +18,7 @@
   <a [title]="wishlist.name" >
     {{wishlist.name}}
   </a>
+  
   </div>
 </div>
 <ng-template #notfound>
@@ -24,6 +27,9 @@
   </div>
   
 </ng-template>
+
+
+
 
   
 
