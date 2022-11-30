@@ -1,0 +1,32 @@
+<h2>Friends</h2>
+
+<div *ngFor="let friends of friends!">
+  <h3>
+    <a [title]="friends.name" >  
+      {{ friends.name }}
+    </a>
+  </h3>
+</div>
+
+<h4>Your Wishlist</h4>
+
+
+  <div *ngFor="let wishlist of wishlist!">
+  <div *ngIf="wishlist && wishlist.name; else notfound">
+  <a [title]="wishlist.name" >
+    {{wishlist.name}}
+  </a>
+  </div>
+</div>
+<ng-template #notfound>
+  <div>
+    <h5>You do not have a wishlist yet! Click below to create one</h5>
+  </div>
+  
+</ng-template>
+
+  
+
+  
+
+

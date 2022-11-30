@@ -26,6 +26,40 @@ export const products = [
   }
 ];
 
+export interface Friends {
+  id: number;
+  name: string;
+}
+
+export const friends =[
+  {
+    id: 1,
+    name: 'Bob Sagget'
+  },
+  {
+    id: 2,
+    name: 'Rick Ross'
+  }
+  
+]
+
+export interface WishList {
+  id: number;
+  name: string;
+  price: number;
+}
+
+export const wishlist =[
+  {
+    id:1,
+    name: '',
+    price: 300
+  }
+  
+]
+
+
+
 
 /*
 Copyright Google LLC. All Rights Reserved.
