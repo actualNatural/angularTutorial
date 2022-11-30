@@ -1,0 +1,53 @@
+#Greeting {
+  
+  font-size:20px;
+  font-weight: 600;
+  color:rgba(0, 0, 0, 0.87);
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid rgb(12, 94, 45);
+  padding: 10px;
+  position: relative;
+  top: 10px;
+  text-align: center;
+  
+}
+
+.input {
+
+  margin: auto;
+  width: 75%;
+  border: 3px solid rgb(0, 3, 1);
+  background-color : ghostwhite;
+  padding: 10px;
+
+}
+
+#UNinput {
+  margin: auto;
+  width:95%;
+  border-color:black
+  
+}
+
+#Pinput {
+  margin: auto;
+  width:95%;
+  border-color:black;
+  position: relative;
+  top:5px;
+  
+}
+
+#SignInButton {
+  margin: auto;
+  width:95%;
+  border-color:black;
+  position: relative;
+  background-color: rgb(12, 94, 45);
+  top:10px;
+  bottom: 10px;
+}
