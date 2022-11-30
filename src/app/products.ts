@@ -58,6 +58,22 @@ export const wishlist =[
   
 ]
 
+export interface User{
+  id:number;
+  username:string;
+  password: string;
+}
+
+export const user = [
+  
+  {
+    id:1,
+    username: 'Kenneth',
+    password: 'Ken123',
+  }
+
+]
+
 
 
 

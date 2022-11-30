@@ -1,8 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { friends, wishlist, Friends } from '../products';
-import { Injectable } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Products, products } from '../products';
+import { products } from '../products';
 import { CartService } from '../cart.service';
 @Component({
   selector: 'app-friends-list',
