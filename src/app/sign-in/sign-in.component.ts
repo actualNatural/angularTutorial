@@ -17,16 +17,9 @@ export class SignInComponent {
   atSignIn : boolean = true;
 
 
-name = '';
-password = '';
 
-getUN(){
-  
-}
 
-  setValue() {
-    this.name = '';  
-  }
+
 
 
 
