@@ -19,7 +19,8 @@ import { SignInComponent } from './sign-in/sign-in.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: 'home/home', component: FriendsListComponent },
-      { path: '', component: SignInComponent }
+      { path: '', component: SignInComponent },
+      { path: 'products/:friendsId', component: ProductDetailsComponent },
       //{ path: '', component: ProductListComponent },
       //{ path: 'products/:productId', component: ProductDetailsComponent },
     ])
