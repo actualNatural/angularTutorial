@@ -5,14 +5,14 @@
 <p id=UNPprompt>
 Please type your username and password below
 </p>
-<input id=UNinput placeholder="Username" [(ngModel)]="name" #username>
+<input id=UNinput placeholder="Username"  #username name="username">
 
-<input id=Pinput placeholder="Password" [(ngModel)]="name" [type]="hide ? 'password' : 'text'" #password>
+<input id=Pinput placeholder="Password" [type]="hide ? 'password' : 'text'" #password>
 <div id=showPass>
   <button id=ShowPassword (click)="myFunction()">Show Password</button>
 </div>
 
-<button id=SignInButton (click)="clickme(username.value,password.value)" (click)="setValue()">Sign In</button>
+<button id=SignInButton (click)="clickme(username.value,password.value)" (click)= "username.value= ''"> Sign In</button>
 
 </div>
 

@@ -10,19 +10,22 @@ import {User, user} from '../products'
 })
 export class SignInComponent {
 
-  constructor(private route: ActivatedRoute, private _router: Router) { }
+  constructor(private route: ActivatedRoute, private _router: Router) {}
 
   hide : boolean = true;
 
   atSignIn : boolean = true;
 
-  name: string = '';
 
-  password: string = '';
+name = '';
+password = '';
+
+getUN(){
+  
+}
 
   setValue() {
-    this.name = 'Nancy';
-    this.password = 'Nancy';
+    this.name = '';  
   }
 
 
