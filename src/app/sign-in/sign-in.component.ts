@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, NgModel } from '@angular/forms';
 import {User, user} from '../products'
 @Component({
   selector: 'app-sign-in',
@@ -10,23 +10,40 @@ import {User, user} from '../products'
 })
 export class SignInComponent {
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private _router: Router) { }
 
   hide : boolean = true;
 
   atSignIn : boolean = true;
 
+  name: string = '';
+
+  setValue() {
+    this.name = 'Nancy';
+  }
+
+  remove(){
+    this.name = '';
+
+  }
+
 myFunction() {
   this.hide = !this.hide;
 }
-signIn(){
-  this.atSignIn = !this.atSignIn;
-}
+
 
 clickme(username:string,password:string) {
   if(username == 'KTab321' && password == 'Mr.Bean'){
+
+    this.atSignIn = false;
+
+    this._router.navigateByUrl('/home/home');
     
 
+  }
+  else{
+    
+    window.alert('Incorrect login information!');
   }
 }
   

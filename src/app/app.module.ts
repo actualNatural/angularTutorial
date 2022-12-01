@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
@@ -12,18 +12,18 @@ import { FriendsListComponent } from './friends-list/friends-list.component';
 import { CartComponent } from './cart/cart.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 
+const appRoutes: Routes = [
+  { path: 'home/home', component: FriendsListComponent },
+  { path: '', component: SignInComponent },
+  { path: 'products/:friendsId', component: ProductListComponent },
+];
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    RouterModule.forRoot([
-      { path: 'home/home', component: FriendsListComponent },
-      { path: '', component: SignInComponent },
-      { path: 'products/:friendsId', component: ProductListComponent },
-      //{ path: '', component: ProductListComponent },
-      //{ path: 'products/:productId', component: ProductDetailsComponent },
-    ])
+    RouterModule.forRoot(appRoutes),
+    FormsModule
   ],
   declarations: [
     AppComponent,
