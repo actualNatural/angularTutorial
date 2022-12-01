@@ -4,7 +4,7 @@
 </a>
 
 
-  <a class="button fancy-button" *ngIf="router != '/'" [routerLink]="['']" (click)="checkValue()">Log Out</a>
-  <a class="button fancy-button" [routerLink]="['/home/home']">Home</a>
+  <a class="button fancy-button" *ngIf="url !== '/'" [routerLink]="['']" (click)="checkValue()">Log Out</a>
+  <a class="button fancy-button" *ngIf="url == '/'" [routerLink]="['/home/home']" (click)="checkValue()">Home</a>
 
 

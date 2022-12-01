@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-top-bar',
@@ -7,14 +7,18 @@ import { Router } from '@angular/router';
   styleUrls: ['./top-bar.component.css']
 })
 export class TopBarComponent {
-  router: string;
+  public url: any;
 
-  constructor(private _router: Router){
+  constructor(private router: Router) {
 
-    this.router = _router.url; 
-}
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.url = event.url;
+      }
+    })
+  }
 checkValue(){
-  alert("you curren route is:"+ this.router)
+  alert("you curren route is:"+ this.router.url)
 }
 
 }
