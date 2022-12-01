@@ -14,7 +14,7 @@ export class TopBarComponent {
     this.router = _router.url; 
 }
 checkValue(){
-  console.log("you curren route is:", this.router)
+  alert("you curren route is:"+ this.router)
 }
 
 }
