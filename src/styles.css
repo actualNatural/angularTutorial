@@ -69,7 +69,7 @@ label {
   text-transform: uppercase;
 }
 
-/* Button */
+
 .button, button {
   display: inline-flex;
   align-items: center;
@@ -92,7 +92,6 @@ label {
   cursor: auto;
 }
 
-/* Fancy Button */
 
 .fancy-button {
   background-color: white;
