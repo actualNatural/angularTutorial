@@ -11,7 +11,7 @@
 </div>
 
 
-<h4>Your Wishlist</h4>
+<h2 id=yourFriends>Your Wishlist</h2>
 
 
   <div *ngFor="let wishlist of wishlist!">
@@ -24,7 +24,8 @@
 </div>
 <ng-template #notfound>
   <div>
-    <h5>You do not have a wishlist yet! Click below to create one</h5>
+    <h2 id=warningMessage>You do not have a wishlist yet! Click below to create one</h2>
+    <button id=createWishlist>Create Wishlist</button>
   </div>
   
 </ng-template>
