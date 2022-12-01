@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { FormBuilder } from '@angular/forms';
+import {User, user} from '../products'
 @Component({
   selector: 'app-sign-in',
   templateUrl: './sign-in.component.html',
@@ -12,8 +13,13 @@ export class SignInComponent {
 
   hide : boolean = true;
 
+  atSignIn : boolean = true;
+
 myFunction() {
   this.hide = !this.hide;
+}
+signIn(){
+  this.atSignIn = !this.atSignIn;
 }
   
 
