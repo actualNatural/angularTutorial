@@ -20,7 +20,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
     RouterModule.forRoot([
       { path: 'home/home', component: FriendsListComponent },
       { path: '', component: SignInComponent },
-      { path: 'products/:friendsId', component: ProductDetailsComponent },
+      { path: 'products/:friendsId', component: ProductListComponent },
       //{ path: '', component: ProductListComponent },
       //{ path: 'products/:productId', component: ProductDetailsComponent },
     ])
