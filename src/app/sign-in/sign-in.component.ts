@@ -18,14 +18,14 @@ export class SignInComponent {
 
   name: string = '';
 
+  password: string = '';
+
   setValue() {
     this.name = 'Nancy';
+    this.password = 'Nancy';
   }
 
-  remove(){
-    this.name = '';
 
-  }
 
 myFunction() {
   this.hide = !this.hide;
