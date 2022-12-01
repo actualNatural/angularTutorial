@@ -12,8 +12,7 @@
   width: 50%;
   border: 3px solid rgb(12, 94, 45);
   text-align: center;
-  display: flex;
-  justify-content: center;
+  height:100%
   
 }
 
@@ -51,9 +50,9 @@
   border-color:black;
   position: relative;
   background-color: rgb(12, 94, 45);
-  top:10px;
-  bottom: 10px;
-  text-align: center;
+  top:0px;
+  bottom: 15px;
+  
 }
 
 #ShowPassword{
