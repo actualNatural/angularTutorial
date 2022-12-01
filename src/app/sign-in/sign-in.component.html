@@ -5,7 +5,10 @@
 Please type your username and password below
 </p>
 <input id=UNinput placeholder="Username">
-<input id=Pinput placeholder="Password" [type]="hide ? 'password' : 'text'"><button id=ShowPassword (click)="myFunction()">Show Password</button>
+<input id=Pinput placeholder="Password" [type]="hide ? 'password' : 'text'">
+<div id=showPass>
+  <button id=ShowPassword (click)="myFunction()">Show Password</button>
+</div>
 
 <button id=SignInButton [routerLink]="['/home/home']">Sign In</button>
 
