@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
@@ -39,9 +39,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
     AppComponent
   ]
 })
-const appRoutes: Routes = [
-  { path: 'home/home', component: FriendsListComponent },
-];
+
 export class AppModule { }
 
 

@@ -25,7 +25,7 @@ signIn(){
 
 clickme(username:string,password:string) {
   if(username == 'KTab321' && password == 'Mr.Bean'){
-    this.route.navigateByUrl('/welcome');
+    
 
   }
 }
