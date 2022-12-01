@@ -1,8 +1,8 @@
 <h2>Friends</h2>
 
-<div id=friendsList *ngFor="let friends of friends!">
+<div  *ngFor="let friends of friends!">
   <h3>
-    <a [title]="friends.name" >  
+    <a id=friendsList [title]="friends.name" >  
       {{ friends.name }}
     </a>
   </h3>
