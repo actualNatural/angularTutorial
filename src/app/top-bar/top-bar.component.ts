@@ -18,7 +18,7 @@ export class TopBarComponent {
     })
   }
 checkValue(){
-  alert("you curren route is:"+ this.router.url)
+  alert("you curren route is:"+ this.url)
 }
 
 }

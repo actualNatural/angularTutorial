@@ -3,8 +3,8 @@
   <h1 id=top-bar-text>Gift Giver</h1>
 </a>
 
-
+<a class="button fancy-button" *ngIf="url !== '/'" [routerLink]="['/home/home']" (click)="checkValue()">Home</a>
   <a class="button fancy-button" *ngIf="url !== '/'" [routerLink]="['']" (click)="checkValue()">Log Out</a>
-  <a class="button fancy-button" *ngIf="url == '/'" [routerLink]="['/home/home']" (click)="checkValue()">Home</a>
+  
 
 
