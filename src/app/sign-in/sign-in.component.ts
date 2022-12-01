@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 import { FormBuilder } from '@angular/forms';
 import {User, user} from '../products'
 @Component({
@@ -20,6 +21,13 @@ myFunction() {
 }
 signIn(){
   this.atSignIn = !this.atSignIn;
+}
+
+clickme(username:string,password:string) {
+  if(username == 'KTab321' && password == 'Mr.Bean'){
+    this.route.navigateByUrl('/welcome');
+
+  }
 }
   
 
